@@ -10,7 +10,7 @@
         <header>
             <h1>CSE 110 Meeting #1 Brainstorm</h1>
             <h2>Topic: Brainstorming</h2>
-            <h3>Date: April 8, 2026</h2>
+            <h3>Date: April 8, 2026</h3>
             <nav>
                 <p>
                     Jump to: 
@@ -30,11 +30,13 @@
             <section id="attendance">
                 <h3>Attendance List</h3>
                 <div> <ul>
-                    <li><span>Present:</span> Adithya Gundlapalli, 
+                    <li><span><b>Present:</b></span> Adithya Gundlapalli, 
                         Alex Perelson, Allison Lian, Benjamin Scheerger, 
                         Binteng Tan, Christian Pacheco, Jacky Yu, Kaitlyn Nguy, 
                         Owen Atis, Rena Tokhi, Yu Wu, and Jared Ziv (TA)</li>
-                    <li>Absent: None</li>
+                    <li><b>Absent</b>: None</li>
+                    <li><strong>Note:</strong> Everyone <em>must</em> attend the 
+                    next meeting!</li>
                 </ul>
                 </div>
             </section>
@@ -42,8 +44,8 @@
             <section id="agenda">
                 <h3>Agenda</h3>
                 <ol>
-                    <li>Review last week's work</li>
-                    <li>Discuss upcoming tasks</li>
+                    <li>Review <i>last</i> week's work</li>
+                    <li>Discuss <i>upcoming</i> tasks</li>
                 </ol>
             </section>
 
@@ -65,17 +67,95 @@
             </section>
 
             <section id="misc">
-                <h3>Questions</h3>
+                <h3>Questions & Comments</h3>
                 <ul>
                     <li>How often are we planning on meeting?</li>
                     <li>Are any members leaning towards certain tasks or areas?</li>
                 </ul>
+                <details>
+                    <summary>See comments and concerns</summary>
+                    <p>During the meeting, some members mentioned they will be 
+                        pretty busy this quarter, so we will try to soon work 
+                        out times where we can meet. 
+                    </p>
+                </details>
             </section>
 
             <section id="media">
                 <h3>Multimedia</h3>
                 
+                <h4>Whiteboard Diagram</h4>
+                <img src="Whiteboard Pic.png" alt="Brainstorming whiteboard">
+
+                <h4>Audio Recording</h4>
+                <audio controls> 
+                    <source src="Meeting Audio.mp3" type="audio/mpeg">
+                </audio>
+
+                <h4>Video Recording</h4>
+                <video width="320" height="240" controls>
+                    <source src="Tour EBU.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <section id="recap">
+                <h3>Recap</h3>
+                <p>Overall, productive meeting where members laid out next steps
+                    for project and goals as a team this quarter. <br> Good 
+                    work!
+                </p>
             </section>
         </main>
+
+        <hr> 
+
+        <footer>
+            <h2>Contact & Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Identification Information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="meeting-date">Next Available Date:</label>
+                    <input type="date" id="meeting-date" name="meeting-date"><br><br>
+
+                    <p>Preferred Role (of the 2):</p>
+                    <input type="radio" id="dev" name="role" value="developer">
+                    <label for="dev">Developer</label>
+                    <input type="radio" id="des" name="role" value="designer">
+                    <label for="des">Designer</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Feedback</legend>
+
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to meeting updates</label><br><br>
+
+                    <label for="team">Choose a sub-team:</label>
+                    <select id="team" name="team">
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="ui-ux">UI/UX</option>
+                    </select><br><br>
+
+                    <label for="browser-choice">Main Browser used for Testing:</label>
+                    <input list="browsers" id="browser-choice" name="browser">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Safari">
+                        <option value="Firefox">
+                    </datalist><br><br>
+
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                    <button type="button">Save Draft</button>
+                    <button type="submit">Submit Information</button>
+                </fieldset>
+            </form>
+        </footer>
     </body>
 </html>
